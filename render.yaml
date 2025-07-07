@@ -1,0 +1,16 @@
+services:
+  - type: cron
+    name: auto-upload-am
+    env: python
+    schedule: "0 3 * * *"  # 9:00 AM IST (Render uses UTC)
+    plan: free
+    buildCommand: ""
+    startCommand: "bash run_script.sh"
+
+  - type: cron
+    name: auto-upload-pm
+    env: python
+    schedule: "0 12 * * *"  # 6:00 PM IST
+    plan: free
+    buildCommand: ""
+    startCommand: "bash run_script.sh"

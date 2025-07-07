@@ -1,0 +1,7 @@
+opencv-python
+numpy
+yt-dlp
+moviepy>=1.0.3
+instagrapi
+shutil; python_version < "3.8"
+requests
