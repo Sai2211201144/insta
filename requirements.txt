@@ -1,8 +1,24 @@
-opencv-python
-numpy
-yt-dlp
-moviepy>=1.0.3
-instagrapi
-shutil; python_version < "3.8"
-requests
-librosa
+# ── Core numerical & scientific ─────────────────────────
+numpy==1.26.4
+scipy==1.13.0           # librosa backend
+numba==0.59.0           # librosa backend
+
+# ── Video / image processing ────────────────────────────
+opencv-python-headless==4.9.0.80   # headless build = no GUI deps
+
+# ── Audio analysis ──────────────────────────────────────
+librosa==0.10.1
+soundfile==0.12.1       # sometimes needed explicitly on slim images
+
+# ── YouTube download ────────────────────────────────────
+yt-dlp==2024.05.27
+
+# ── Google Gemini (Generative AI) ───────────────────────
+google-generativeai==0.3.2
+
+# ── Instagram upload API ────────────────────────────────
+instagrapi==2.0.8
+pillow==10.3.0          # instagrapi image handling
+
+# ── Networking helpers ─────────────────────────────────
+requests==2.31.0
