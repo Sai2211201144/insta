@@ -486,4 +486,9 @@ if __name__ == "__main__":
             except OSError as e:
                 print(f"Error removing temporary directory: {e}. Please remove it manually if it persists.")
         print("Cleanup complete.")
+import time
+print("Sleeping for 12 hours before next run...")
+time.sleep(43200)  # 12 hours = 43200 seconds
+os.execv(sys.executable, ['python'] + sys.argv)  # restart the script
+
         #,https://youtu.be/g07m6oLJqEk?feature=shared&t=6
