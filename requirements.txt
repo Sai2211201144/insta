@@ -5,3 +5,4 @@ moviepy>=1.0.3
 instagrapi
 shutil; python_version < "3.8"
 requests
+librosa
