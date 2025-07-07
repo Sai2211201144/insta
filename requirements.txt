@@ -5,3 +5,4 @@ yt-dlp
 google-generativeai
 instagrapi
 requests
+pillow>=8.1.1
